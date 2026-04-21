@@ -14,6 +14,15 @@ const projects = [
     link: "https://webtech-project-ae73.vercel.app",
   },
   {
+    title: "AI-Based Knee Osteoarthritis Detection System",
+    category: "Deep Learning & Healthcare",
+    description: "An AI-powered diagnostic system that automates the classification of knee X-ray images. By leveraging Convolutional Neural Networks (CNN), it provides clinically accurate Kellgren-Lawrence grading in seconds, reducing diagnostic delays and human error.",
+    software: "Python, CNN (Deep Learning for X-ray processing), React, Next.js",
+    hardware: "None",
+    images: ["/images/arthro-1.png", "/images/arthro-2.png"],
+    link: "https://kneearthritisdetection.vercel.app",
+  },
+  {
     title: "Emergency Services System",
     category: "Integrated Response Platform",
     description: "An integrated emergency response platform connecting users with nearby fire, police, and medical services. Enables quick alert generation, location tracking, and faster dispatch of emergency units.",
