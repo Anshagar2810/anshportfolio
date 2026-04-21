@@ -24,10 +24,24 @@
 }
 
 .about-me p {
-  font-size: 33px;
+  font-size: 22px;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 28px;
   letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 500px) {
+  .about-me p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-me p {
+    font-size: 33px;
+    line-height: 36px;
+  }
 }
 
 @media only screen and (min-width: 600px) {

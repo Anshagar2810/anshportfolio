@@ -14,6 +14,18 @@ export default function handleResize(
   const height = canvas3d.height;
   renderer.setSize(width, height);
   camera.aspect = width / height;
+
+  if (window.innerWidth < 768) {
+    camera.position.set(0, 11, 35);
+    camera.zoom = 1.0;
+  } else if (window.innerWidth < 1024) {
+    camera.position.set(0, 12, 30);
+    camera.zoom = 1.05;
+  } else {
+    camera.position.set(0, 13.1, 24.7);
+    camera.zoom = 1.1;
+  }
+
   camera.updateProjectionMatrix();
   const workTrigger = ScrollTrigger.getById("work");
   ScrollTrigger.getAll().forEach((trigger) => {

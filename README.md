@@ -1,5 +1,4 @@
 # My Portfolio Wesbite - Overview 🚀
-Latest update: 2026-04-02
 
 This repository contains the open source version of my porfolio website.
 Do check it out!

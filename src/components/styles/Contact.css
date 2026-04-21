@@ -8,10 +8,22 @@
 }
 
 .contact-section h3 {
-  font-size: 60px;
+  font-size: 32px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section h3 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-section h3 {
+    font-size: 60px;
+  }
 }
 
 .contact-flex {
@@ -38,6 +50,14 @@
 a.contact-social {
   font-size: 25px;
   border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  a.contact-social {
+    padding: 10px 0;
+  }
 }
 
 .contact-box h2 {
@@ -51,12 +71,18 @@ a.contact-social {
 }
 
 .contact-box h5 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   display: flex;
   gap: 10px;
   opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-box h5 {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 1600px) {

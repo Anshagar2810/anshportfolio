@@ -7,6 +7,17 @@ const WhatIDo = () => {
   const setRef = (el: HTMLDivElement | null, index: number) => {
     containerRef.current[index] = el;
   };
+  const handleClick = (container: HTMLDivElement) => {
+    containerRef.current.forEach((el) => {
+      if (el !== container) {
+        el?.classList.remove("what-content-active");
+        el?.classList.add("what-sibling");
+      }
+    });
+    container.classList.add("what-content-active");
+    container.classList.remove("what-sibling");
+  };
+
   useEffect(() => {
     if (ScrollTrigger.isTouch) {
       containerRef.current.forEach((container) => {

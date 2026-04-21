@@ -85,6 +85,30 @@
   flex-direction: column;
 }
 
+.project-link-wrapper {
+  margin-top: 15px;
+}
+
+.visit-website-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--accentColor, #5eead4);
+  color: #121212;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.visit-website-btn:hover {
+  background-color: transparent;
+  color: var(--accentColor, #5eead4);
+  border-color: var(--accentColor, #5eead4);
+  box-shadow: 0 0 15px rgba(94, 234, 212, 0.3);
+}
+
 .carousel-image-wrapper {
   width: 100%;
   display: flex;
@@ -98,51 +122,29 @@
   flex-direction: row;
   gap: 20px;
   width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-.project-images-grid .work-image {
-  flex: 0 1 auto;
-  min-width: 300px;
-  max-width: 800px;
-}
-
-.project-images-grid .work-image img {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-@media only screen and (max-width: 1025px) {
-  .project-images-grid {
-    justify-content: center;
-  }
-  .project-images-grid .work-image {
-    min-width: 250px;
-    width: 45%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .project-images-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-  .project-images-grid .work-image {
-    width: 100%;
-    min-width: 100%;
-  }
+.carousel-number h3 {
+  font-size: 60px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .carousel-details h4 {
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 14px;
+  color: var(--accentColor);
   margin: 0;
+}
+
+.carousel-details h3 {
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.carousel-details p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.8;
 }
 
 .carousel-category {
@@ -150,37 +152,6 @@
   color: #adacac;
   margin: 0;
   font-size: 16px;
-}
-
-.carousel-description {
-  font-size: 15px;
-  line-height: 1.6;
-  opacity: 0.8;
-  margin: 15px 0;
-  max-width: 600px;
-}
-
-.carousel-tools .tools-label {
-  font-size: 14px;
-  font-weight: 400;
-  opacity: 0.6;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.carousel-tools p {
-  font-weight: 200;
-  color: #adacac;
-  margin: 6px 0 0;
-  font-size: 15px;
-}
-
-.carousel-number h3 {
-  font-size: 60px;
-  line-height: 1;
-  margin: 0;
-  font-weight: 600;
-  opacity: 0.3;
 }
 
 .carousel-arrow {
@@ -239,13 +210,56 @@
 
 .carousel-dot:hover {
   border-color: var(--accentColor);
-  background: rgba(94, 234, 212, 0.2);
 }
 
 .carousel-dot-active {
   background: var(--accentColor);
   border-color: var(--accentColor);
-  box-shadow: 0 0 8px rgba(94, 234, 212, 0.4);
+  box-shadow: 0 0 10px rgba(94, 234, 212, 0.5);
+}
+
+.carousel-slide {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel-arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .carousel-content {
+    gap: 20px;
+  }
+
+  .carousel-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .carousel-number h3 {
+    font-size: 40px;
+  }
+
+  .carousel-details h3 {
+    font-size: 22px;
+  }
+
+  .project-images-grid {
+    flex-direction: column;
+  }
+
+  .carousel-dot {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 /* ── Work Image (reused) ── */

@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
@@ -11,6 +11,7 @@ const projects = [
     software: "Python, ML (Scikit-learn), Pandas, NumPy, Firebase",
     hardware: "Sensors (SpO2, Heart rate, Temp), Arduino / Raspberry Pi",
     images: ["/images/ews-1.png", "/images/ews-2.png"],
+    link: "https://webtech-project-ae73.vercel.app",
   },
   {
     title: "Emergency Services System",
@@ -33,6 +34,8 @@ const projects = [
 const Work = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const touchStart = useRef<number | null>(null);
+  const touchEnd = useRef<number | null>(null);
 
   const goToSlide = useCallback(
     (index: number) => {
@@ -55,6 +58,30 @@ const Work = () => {
       currentIndex === projects.length - 1 ? 0 : currentIndex + 1;
     goToSlide(newIndex);
   }, [currentIndex, goToSlide]);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStart.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEnd.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart.current || !touchEnd.current) return;
+    const distance = touchStart.current - touchEnd.current;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      goToNext();
+    } else if (isRightSwipe) {
+      goToPrev();
+    }
+
+    touchStart.current = null;
+    touchEnd.current = null;
+  };
 
   return (
     <div className="work-section" id="work">
@@ -83,7 +110,12 @@ const Work = () => {
           </button>
 
           {/* Slides */}
-          <div className="carousel-track-container">
+          <div
+            className="carousel-track-container"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             <div
               className="carousel-track"
               style={{
@@ -115,6 +147,13 @@ const Work = () => {
                             <p>{project.hardware}</p>
                           </div>
                         </div>
+                        {project.link && (
+                          <div className="project-link-wrapper">
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="visit-website-btn">
+                              Visit Website
+                            </a>
+                          </div>
+                        )}
                       </div>
                     </div>
                     {project.images && project.images.length > 0 && (

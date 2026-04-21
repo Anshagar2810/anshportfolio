@@ -26,18 +26,6 @@
   margin-bottom: 90px;
 }
 
-.career-section h2>span {
-  font-family: "Geist", sans-serif;
-  font-weight: 300;
-}
-
-.career-info {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 0px auto;
-}
-
 .career-info-box {
   display: flex;
   justify-content: space-between;
@@ -73,15 +61,6 @@
   margin: 0;
 }
 
-.career-info h5 {
-  font-weight: 400;
-  letter-spacing: 0.7px;
-  font-size: 20px;
-  text-transform: capitalize;
-  margin: 10px 0px;
-  color: var(--accentColor);
-}
-
 .career-timeline {
   position: absolute;
   top: -50px;
@@ -96,52 +75,6 @@
   max-height: 0%;
 }
 
-.career-dot {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  background-color: #14b8a6;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 8px #5eead4,
-    0px 0px 110px 20px #a5f3fc;
-  animation: timeline 0.8s linear infinite forwards;
-}
-
-@keyframes timeline {
-
-  10%,
-  20%,
-  50%,
-  70%,
-  90% {
-    box-shadow: 0px 0px 5px 2px #67e8f9;
-  }
-
-  10%,
-  30%,
-  0%,
-  100%,
-  64%,
-  80% {
-    box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 5px #5eead4,
-      0px 0px 110px 20px #a5f3fc;
-  }
-}
-
-@keyframes timeline2 {
-  0% {
-    box-shadow: 0px 0px 5px 2px #67e8f9;
-  }
-
-  100% {
-    box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 5px #5eead4,
-      0px 0px 110px 20px #a5f3fc;
-  }
-}
-
 @media only screen and (max-width: 1400px) {
   .career-section h2 {
     font-size: 50px;
@@ -152,10 +85,6 @@
     font-size: 22px;
     line-height: 24px;
     width: 180px;
-  }
-
-  .career-info h5 {
-    font-size: 17px;
   }
 
   .career-info h3 {
@@ -201,10 +130,6 @@
 
   .career-timeline {
     left: 0%;
-  }
-
-  .career-container {
-    width: calc(100% - 25px);
   }
 }
 

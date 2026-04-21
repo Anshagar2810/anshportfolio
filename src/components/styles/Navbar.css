@@ -45,6 +45,17 @@
   font-size: 14px;
   letter-spacing: 0.2px;
 }
+.header ul {
+  font-size: 10px;
+  column-gap: 20px;
+  row-gap: 5px;
+}
+@media only screen and (min-width: 400px) {
+  .header ul {
+    font-size: 12px;
+    column-gap: 30px;
+  }
+}
 @media only screen and (min-width: 500px) {
   .header {
     padding: 20px 0px;
@@ -53,6 +64,7 @@
     flex-direction: row;
     align-items: center;
     font-size: 14px;
+    column-gap: 40px;
   }
   .header ul li {
     color: #eae5ec;
