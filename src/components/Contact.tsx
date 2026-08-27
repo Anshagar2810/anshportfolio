@@ -15,7 +15,7 @@ const Contact = () => {
               </a>
             </p>
             <h4>Education</h4>
-            <p>Btech in Computer Science With AiML</p>
+            <p>B.Tech in Computer Science Engineering (IILM University, 2023–2027)</p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>

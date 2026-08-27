@@ -6,15 +6,11 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I am a Computer Science student with a strong interest in Machine
-          Learning, Artificial Intelligence, and intelligent system development.
-          I enjoy building technology-driven solutions that address real-world
-          problems. I have worked on projects such as a Smart Ward Early Warning
-          System (EWS) for healthcare monitoring, a Fraud Detection System for
-          identifying suspicious activities, and a Smart Car controlled using
-          hand gestures and Bluetooth. I am continuously exploring new
-          technologies and improving my skills in AI, data analysis, and
-          software development to build impactful solutions.
+          I am a Computer Science Engineering student (B.Tech '27 at IILM University)
+          specializing in AI/ML, Full-Stack Development, and IoT. With internship experience
+          at Airtel and IBM Pune, I architect end-to-end intelligent systems — from automated
+          Django database portals and real-time healthcare monitoring dashboards (Smart Ward EWS)
+          to NLP customer support chatbots and deep learning medical diagnostic classifiers.
         </p>
       </div>
     </div>

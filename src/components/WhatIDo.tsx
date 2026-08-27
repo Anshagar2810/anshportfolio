@@ -98,22 +98,25 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>FRONTEND</h3>
-              <h4>Building Interactive UIs</h4>
+              <h3>FULL STACK</h3>
+              <h4>End-to-End Web Applications</h4>
               <p>
-                Crafting performant, responsive interfaces with modern frameworks.
-                From SPAs to micro-frontends, I deliver pixel-perfect experiences.
+                Crafting performant interfaces and scalable backends. From Django automation portals and REST APIs to microservices and responsive UIs.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">React.js</div>
-                <div className="what-tags">Angular</div>
                 <div className="what-tags">Next.js</div>
+                <div className="what-tags">Node.js</div>
+                <div className="what-tags">Django</div>
+                <div className="what-tags">Express.js</div>
                 <div className="what-tags">TypeScript</div>
                 <div className="what-tags">JavaScript</div>
-                <div className="what-tags">Material UI</div>
-                <div className="what-tags">HTML5</div>
-                <div className="what-tags">CSS3</div>
+                <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">MongoDB</div>
+                <div className="what-tags">REST APIs</div>
+                <div className="what-tags">Python</div>
+                <div className="what-tags">HTML5 / CSS3</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -121,54 +124,6 @@ const WhatIDo = () => {
           <div
             className="what-content what-noTouch"
             ref={(el) => setRef(el, 1)}
-          >
-            <div className="what-border1">
-              <svg height="100%">
-                <line
-                  x1="0"
-                  y1="0"
-                  x2="100%"
-                  y2="0"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeDasharray="6,6"
-                />
-                <line
-                  x1="0"
-                  y1="100%"
-                  x2="100%"
-                  y2="100%"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeDasharray="6,6"
-                />
-              </svg>
-            </div>
-            <div className="what-corner"></div>
-            <div className="what-content-in">
-              <h3>BACKEND</h3>
-              <h4>Scalable Server Architecture</h4>
-              <p>
-                Designing robust APIs and microservices. From CMS platforms to
-                complex business logic, I build backends that scale.
-              </p>
-              <h5>Skillset & tools</h5>
-              <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">NestJS</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">REST APIs</div>
-                <div className="what-tags">Microservices</div>
-                <div className="what-tags">Python</div>
-              </div>
-              <div className="what-arrow"></div>
-            </div>
-          </div>
-          <div
-            className="what-content what-noTouch"
-            ref={(el) => setRef(el, 2)}
           >
             <div className="what-border1">
               <svg height="100%">
@@ -188,12 +143,12 @@ const WhatIDo = () => {
               <h3>ARDUINO</h3>
               <h4>Hardware & IoT Systems</h4>
               <p>
-                Building intelligent hardware solutions and gesture-controlled
-                systems using Arduino, Bluetooth, and various sensors.
+                Building intelligent hardware solutions, IoT patient monitoring systems, and gesture-controlled vehicles using Arduino, ESP8266, and Bluetooth.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">Arduino</div>
+                <div className="what-tags">ESP8266</div>
                 <div className="what-tags">C++</div>
                 <div className="what-tags">IoT</div>
                 <div className="what-tags">Sensors</div>

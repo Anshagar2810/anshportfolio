@@ -15,16 +15,13 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>AI ML Intern</h4>
-                <h5>IBM Pune</h5>
+                <h4>Networking Automation Intern</h4>
+                <h5>Airtel</h5>
               </div>
-              <h3>2024</h3>
+              <h3>2026</h3>
             </div>
             <p>
-              Built a model on Wangiri call fraud detection using AI/ML techniques like
-              hashing and Python. Optimized the detection algorithm to identify
-              suspicious patterns in real-time, significantly reducing false
-              positives in telecommunication data.
+              Architected a Django portal to automate CI activation workflows, reducing request TAT processing time by 45%. Migrated backend application databases from MySQL to PostgreSQL for 10,000+ records with zero downtime.
             </p>
           </div>
           <div className="career-info-box">
@@ -36,10 +33,19 @@ const Career = () => {
               <h3>2025</h3>
             </div>
             <p>
-              Built a Customer complaint analyzer chatbot for Vodafone Idea Customers
-              using Ollama Mistral 7B and NLP techniques. Implemented automated
-              sentiment analysis and category classification to streamline support
-              ticket resolution.
+              Deployed an AI customer support chatbot using Gradio and Ollama (Mistral 7B), achieving 92% automated query resolution accuracy and reducing manual ticket volume by 35%.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>AI/ML Intern</h4>
+                <h5>IBM Pune</h5>
+              </div>
+              <h3>2024</h3>
+            </div>
+            <p>
+              Analyzed 50,000+ telecom CDRs for Wangiri call fraud patterns. Developed predictive ML models to classify high-risk calling anomalies with 94% precision, boosting fraud detection accuracy by 18%.
             </p>
           </div>
         </div>

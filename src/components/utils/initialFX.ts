@@ -37,8 +37,7 @@ export function initialFX() {
 
   var role1 = new SplitText(".landing-role-1", TextProps);
   var role2 = new SplitText(".landing-role-2", TextProps);
-  var role3 = new SplitText(".landing-role-3", TextProps);
-  gsap.set([".landing-role-1", ".landing-role-2", ".landing-role-3"], {
+  gsap.set([".landing-role-1", ".landing-role-2"], {
     opacity: 1,
   });
 
@@ -64,13 +63,13 @@ export function initialFX() {
     }
   );
 
-  LoopText3(role1, role2, role3);
+  LoopText2(role1, role2);
 }
 
-function LoopText3(TextA: SplitText, TextB: SplitText, TextC: SplitText) {
+function LoopText2(TextA: SplitText, TextB: SplitText) {
   var tl = gsap.timeline({ repeat: -1, repeatDelay: 0.4 });
   const hold = 1;
-  [TextA, TextB, TextC].forEach((T) => {
+  [TextA, TextB].forEach((T) => {
     tl.fromTo(
       T.chars,
       { opacity: 0, y: 80 },

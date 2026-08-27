@@ -5,37 +5,32 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Smart Ward Early Warning System (EWS)",
-    category: "Real-time Monitoring & Healthcare",
-    description: "A real-time monitoring system designed for hospital wards to track patient vitals and detect critical conditions early. It helps healthcare staff respond quickly by generating alerts when abnormal patterns are detected.",
-    software: "Python, ML (Scikit-learn), Pandas, NumPy, Firebase",
-    hardware: "Sensors (SpO2, Heart rate, Temp), Arduino / Raspberry Pi",
+    title: "Smart Ward Early Warning System (IoT + AI)",
+    category: "IoT & Healthcare Monitoring",
+    description:
+      "Engineered a real-time IoT patient vitals monitoring system tracking metrics with <2s latency. Implemented on-device risk analysis and automated WhatsApp alerts via Twilio, accelerating clinical response by 50%.",
+    software: "Node.js, MongoDB, ThingSpeak API, Twilio, HTML, JavaScript",
+    hardware: "ESP8266 Microcontroller, DS18B20 Temp & Oximeter Sensors",
     images: ["/images/ews-1.png", "/images/ews-2.png"],
     link: "https://webtech-project-ae73.vercel.app",
   },
   {
     title: "AI-Based Knee Osteoarthritis Detection System",
-    category: "Deep Learning & Healthcare",
-    description: "An AI-powered diagnostic system that automates the classification of knee X-ray images. By leveraging Convolutional Neural Networks (CNN), it provides clinically accurate Kellgren-Lawrence grading in seconds, reducing diagnostic delays and human error.",
-    software: "Python, CNN (Deep Learning for X-ray processing), React, Next.js",
-    hardware: "None",
+    category: "Deep Learning & Medical Imaging",
+    description:
+      "Built a medical imaging classifier using Xception and MobileNet CNNs, achieving 93% accuracy across knee X-ray stages. Automated image preprocessing and diagnostic report generation, reducing radiologist evaluation time by 60%.",
+    software: "Python, Deep Learning, Xception, MobileNet, TensorFlow, React, Next.js",
+    hardware: "N/A",
     images: ["/images/arthro-1.png", "/images/arthro-2.png"],
     link: "https://kneearthritisdetection.vercel.app",
   },
   {
-    title: "Emergency Services System",
-    category: "Integrated Response Platform",
-    description: "An integrated emergency response platform connecting users with nearby fire, police, and medical services. Enables quick alert generation, location tracking, and faster dispatch of emergency units.",
-    software: "Python (Flask), Node.js, Google Maps API, Firebase, Gmail API",
-    hardware: "GPS Module (for live location tracking)",
-    images: ["/images/emergency.png"],
-  },
-  {
-    title: "Smart Robo Car",
-    category: "Control Systems & Robotics",
-    description: "A robotic car controlled via Bluetooth or hand gestures using sensors. Demonstrates real-time control systems and wireless communication.",
-    software: "Arduino IDE (Embedded C/C++), Bluetooth libraries",
-    hardware: "Arduino Uno, HC-05 Bluetooth Module, Accelerometer, L298N Motor Driver, DC Motors",
+    title: "Multi-Mode Smart Robotic Car",
+    category: "IoT Robotics & Gesture Control",
+    description:
+      "Constructed an IoT robotic vehicle supporting tri-mode control via hand gestures, Bluetooth, and voice commands. Integrated sensor arrays and wireless modules for seamless low-latency (<50ms) mode switching.",
+    software: "Arduino IDE (C/C++), Bluetooth Protocol",
+    hardware: "Arduino Nano, Arduino Uno, Bluetooth Module, Ultrasonic & Gesture Sensors",
     images: ["/images/car.png"],
   },
 ];

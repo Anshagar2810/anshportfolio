@@ -46,6 +46,10 @@
   gap: 50px;
 }
 
+.career-info {
+  position: relative;
+}
+
 .career-info h3 {
   font-size: 48px;
   margin: 0;
@@ -63,7 +67,7 @@
 
 .career-timeline {
   position: absolute;
-  top: -50px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 3px;
